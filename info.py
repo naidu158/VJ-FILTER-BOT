@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '20597576'))
 API_HASH = environ.get('API_HASH', '9d3a1fbae5b3368cf8c62008d8a41e7d')
-BOT_TOKEN = environ.get('7076167699:AAGq-_bNZKlkt12cs97NFMdzzv6-PgNsIQM', "")
+BOT_TOKEN = environ.get('6777708285:AAFZ7nDqIAjO5wZUjk8uPBPLwPnfVODNNIo', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -51,7 +51,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('mongodb+srv://power56381373:power56381373@cluster0.f4mixtb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', "")
+DATABASE_URI = environ.get('mongodb+srv://naidu158:<password>@naidu158.3ozh52u.mongodb.net/?retryWrites=true&w=majority&appName=naidu158', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
@@ -66,8 +66,8 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟ�
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'kingvj01') # owner username without @
 
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
-CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
-CLONE_DATABASE_URI = environ.get('mongodb+srv://power56381373:power56381373@cluster0.f4mixtb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', "") # Necessary If clone mode is true
+CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
+CLONE_DATABASE_URI = environ.get('', "") # Necessary If clone mode is true
 PUBLIC_FILE_CHANNEL = environ.get('TELUGUMOVIE01REQUSET', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
