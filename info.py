@@ -4,6 +4,8 @@
 
 import os
 environ = os.environ
+import re
+id_pattern = re.compile(r'^-?\d+$')
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '20597576'))
 API_HASH = environ.get('API_HASH', '9d3a1fbae5b3368cf8c62008d8a41e7d')
